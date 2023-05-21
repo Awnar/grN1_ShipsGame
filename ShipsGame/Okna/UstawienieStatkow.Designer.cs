@@ -73,6 +73,7 @@ namespace ShipsGame.Okna
             this.planszaGracza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.planszaGracza.TabIndex = 3;
             this.planszaGracza.TabStop = false;
+            this.planszaGracza.MouseMove += new System.Windows.Forms.MouseEventHandler(this.planszaGracza_MouseMove);
             // 
             // label1
             // 
