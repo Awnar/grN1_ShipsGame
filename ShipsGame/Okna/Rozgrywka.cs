@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShipsGame.Klasy;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace ShipsGame.Okna
         public Rozgrywka()
         {
             InitializeComponent();
+        }
+
+        private void planszaGracza_Paint(object sender, PaintEventArgs e)
+        {
+            Rysowanie.RysujUstawioneKomorki(Gra.Uzytkownik.Plansza, e);
+        }
+
+        private void planszaKomputera_Paint(object sender, PaintEventArgs e)
+        {
+            Rysowanie.RysujUstawioneKomorki(Gra.Komputer.Plansza, e);
         }
     }
 }

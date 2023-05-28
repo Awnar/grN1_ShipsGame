@@ -46,6 +46,7 @@ namespace ShipsGame.Okna
             this.btnObrot.TabIndex = 0;
             this.btnObrot.Text = "Obróć";
             this.btnObrot.UseVisualStyleBackColor = true;
+            this.btnObrot.Click += new System.EventHandler(this.btnObrot_Click);
             // 
             // btnDalej
             // 
@@ -55,6 +56,7 @@ namespace ShipsGame.Okna
             this.btnDalej.TabIndex = 1;
             this.btnDalej.Text = "Dalej";
             this.btnDalej.UseVisualStyleBackColor = true;
+            this.btnDalej.Click += new System.EventHandler(this.btnDalej_Click);
             // 
             // txtNazwaGracza
             // 
@@ -73,6 +75,8 @@ namespace ShipsGame.Okna
             this.planszaGracza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.planszaGracza.TabIndex = 3;
             this.planszaGracza.TabStop = false;
+            this.planszaGracza.Click += new System.EventHandler(this.planszaGracza_Click);
+            this.planszaGracza.Paint += new System.Windows.Forms.PaintEventHandler(this.planszaGracza_Paint);
             this.planszaGracza.MouseMove += new System.Windows.Forms.MouseEventHandler(this.planszaGracza_MouseMove);
             // 
             // label1
