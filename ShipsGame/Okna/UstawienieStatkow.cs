@@ -26,6 +26,7 @@ namespace ShipsGame.Okna
 
         public UstawienieStatkow()
         {
+            this.AutoScaleMode = AutoScaleMode.None;
             InitializeComponent();
 
             poziom = true;
@@ -33,7 +34,7 @@ namespace ShipsGame.Okna
             Gra.Uzytkownik = new Gracz();
             Gra.Komputer = new Gracz();
 
-            indexAktualnegoStatku = 0;
+            indexAktualnegoStatku = 2;
 
             lblNazwaGracza.Visible = false;
             btnDalej.Enabled = false;
