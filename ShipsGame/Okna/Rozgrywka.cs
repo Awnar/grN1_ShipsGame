@@ -75,7 +75,20 @@ namespace ShipsGame.Okna
         {
             int[] strzalKomputera = Gra.StrzalKomputera(Gra.Uzytkownik);
 
+            if (!Gra.WykonajAtak(strzalKomputera[0], strzalKomputera[1], Gra.Komputer, Gra.Uzytkownik))
+            {
+                timerRuchKomputera.Stop();
+                planszaKomputera.Click += planszaKomputera_Click;
+            }
 
+            planszaGracza.Refresh();
+
+            if (Gra.Komputer.LiczbaStatkowDoZatopienia == 0)
+            {
+                MessageBox.Show($"Koniec gry. Wygrał: {Gra.Komputer.Nazwa}");
+                planszaKomputera.Enabled = false;
+                timerRuchKomputera.Stop();
+            }
         }
     }
 }
