@@ -16,7 +16,7 @@ namespace ShipsGame.Klasy
         public int[,] Plansza;
 
         public int[] Flota;
-        public int LiczbaStatkówDoZatopienia;
+        public int LiczbaStatkowDoZatopienia;
 
         public static int ROZMIAR_PLANSZY = 10;
         public static int OSTATNI_INDEX_PLANSZY = ROZMIAR_PLANSZY - 1;
@@ -27,7 +27,7 @@ namespace ShipsGame.Klasy
             Plansza = new int[ROZMIAR_PLANSZY, ROZMIAR_PLANSZY];
 
             Flota = new int[] { 1, 2, 3, 4 };
-            LiczbaStatkówDoZatopienia = Flota.Length;
+            LiczbaStatkowDoZatopienia = Flota.Length;
 
             for (int x = 0; x < ROZMIAR_PLANSZY; x++)
             {

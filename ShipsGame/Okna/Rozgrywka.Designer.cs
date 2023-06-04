@@ -29,10 +29,12 @@ namespace ShipsGame.Okna
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.planszaKomputera = new System.Windows.Forms.PictureBox();
             this.planszaGracza = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.timerRuchKomputera = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.planszaKomputera)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.planszaGracza)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +49,9 @@ namespace ShipsGame.Okna
             this.planszaKomputera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.planszaKomputera.TabIndex = 0;
             this.planszaKomputera.TabStop = false;
+            this.planszaKomputera.Click += new System.EventHandler(this.planszaKomputera_Click);
             this.planszaKomputera.Paint += new System.Windows.Forms.PaintEventHandler(this.planszaKomputera_Paint);
+            this.planszaKomputera.MouseMove += new System.Windows.Forms.MouseEventHandler(this.planszaKomputera_MouseMove);
             // 
             // planszaGracza
             // 
@@ -81,6 +85,11 @@ namespace ShipsGame.Okna
             this.label2.TabIndex = 3;
             this.label2.Text = "Plansza Gracza";
             // 
+            // timerRuchKomputera
+            // 
+            this.timerRuchKomputera.Interval = 1000;
+            this.timerRuchKomputera.Tick += new System.EventHandler(this.timerRuchKomputera_Tick);
+            // 
             // Rozgrywka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,5 +114,6 @@ namespace ShipsGame.Okna
         private System.Windows.Forms.PictureBox planszaGracza;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timerRuchKomputera;
     }
 }

@@ -101,7 +101,7 @@ namespace ShipsGame.Klasy
             }
         }
 
-        /*public static bool WykonajAtak(int komorkaX, int komorkaY, Gracz atakujacy, Gracz atakowany)
+        /public static bool WykonajAtak(int komorkaX, int komorkaY, Gracz atakujacy, Gracz atakowany)
         {
             atakowany.OdkrytePola[komorkaX, komorkaY] = true;
 
@@ -120,9 +120,9 @@ namespace ShipsGame.Klasy
             {
                 return false;
             }
-        }*/
+        }
 
-        /*public static int[] StrzalKomputera(Gracz gracz)
+        public static int[] StrzalKomputera(Gracz gracz)
         {
 
             Random random = new Random();
@@ -138,7 +138,7 @@ namespace ShipsGame.Klasy
 
             int[] strzal = { x, y };
             return strzal;
-        }*/
+        }
 
     }
 }
